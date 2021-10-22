@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculatrice</title>
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="../styles/pageCalculatrice.css">
+</head>
+<body>
+  <script src="../scripts/pageCalculatrice.js" type="text/javascript"></script>
+  <header>
+    <h1>CALCULATRICE</h1>
+  </header>
+  <nav>
+    <a href="../index.html">Menu principal</a>
+    <a href="pageOnClick.html">Tournante</a>
+  </nav>
+  <form name ="calc" action="">
+    <div class="calculator">
+      <div class="row1">
+        <input type="button" name="7" value="7" onclick ="calc.affichage.value += '7'">
+        <input type="button" name="8" value="8" onclick ="calc.affichage.value += '8'">
+        <input type="button" name="9" value="9" onclick ="calc.affichage.value += '9'">
+        <input type="button" name="/" value="/" onclick ="calc.affichage.value += '/'">
+      </div>
+      <div class="row2">
+        <input type="button" name="4" value="4" onclick ="calc.affichage.value += '4'">
+        <input type="button" name="5" value="5" onclick ="calc.affichage.value += '5'">
+        <input type="button" name="6" value="6" onclick ="calc.affichage.value += '6'">
+        <input type="button" name="*" value="*" onclick ="calc.affichage.value += '*'">
+      </div>
+      <div class="row3">
+        <input type="button" name="1" value="1" onclick ="calc.affichage.value += '1'">
+        <input type="button" name="2" value="2" onclick ="calc.affichage.value += '2'">
+        <input type="button" name="3" value="3" onclick ="calc.affichage.value += '2'">
+        <input type="button" name="-" value="-" onclick ="calc.affichage.value += '-'">
+      </div>
+      <div class="row4">
+        <input type="button" name="0" value="0" onclick ="calc.affichage.value += '0'">
+        <input type="button" name="." value="." onclick ="calc.affichage.value +- '.'">
+        <input type="button" name="+" value="+" onclick ="calc.affichage.value += '+'">
+        <input type="button" name="C" value="C" onclick ="calc.affichage.value = ''">
+      </div>
+      <div class="row5">
+        <input type="button" name="=" value="=" onclick="calculatrice()">
+      </div>
+      <input id="resultat" type="text" name ="affichage" placeholder="0">
+    </div>
+  </form>
+</body>
+</html>
